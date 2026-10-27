@@ -1,0 +1,174 @@
+/* Hero card */
+
+
+
+.HeroFound{
+    margin-bottom: 20px;
+    font-size: medium;
+ }
+
+/* Overall Card */
+
+
+ .HeroCard {
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    width: 320px;
+    max-width: 100%;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.10);
+    border: 1px solid #e7e3df;
+ }
+
+ 
+ .HeroTop {
+    position: relative;
+    width: 100%;
+    height: 220px;
+ }
+
+ /* Hero Image */
+
+ .HeroImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+ }
+
+ .HeroTag {
+    position: absolute;
+    top: 12px;
+    background: rgba(255,255,255,0.92);
+    color: #1a1a1a;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 999px;
+    left: 12px;
+ }
+
+ .LikesCount {
+    position: absolute;
+    top: 12px;
+    background: rgba(255,255,255,0.92);
+    color: #1a1a1a;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 999px;
+    right:  12px; 
+ }
+
+ .HeroDetail {
+    padding: 16px 18px 18px; 
+ }
+
+ .HeroName {
+    margin: 0 0 4px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1a1a1a;
+ }
+
+ .HeroLocation {
+    margin: 0 0 10px;
+    font-size: 13px;
+    color: #5a5a5a;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+ }
+ .HeroStory {
+    margin: 0 0 14px;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #1a1a1a;
+ }
+
+ .HeroTags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+
+ } 
+
+ .tag {
+    background: #fdece9;
+    color: #c65a3a;
+    font-size: 12px;
+    font-weight: 200;
+    padding: 5px 10px;
+    border-radius: 99px;
+ }
+
+ .HeroDown {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 12px;
+    border-top: 1px solid #e7e3df;
+ }
+
+
+ .Thanked {
+    border: solid;
+    background: rgb(176, 175, 175);
+    border-radius: 5px;
+    border: none;
+    color: #5a5a5a;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    padding: 6px 8px;
+ }
+
+ .Heart {
+    color: #821818;
+ }
+
+ .ReadMore {
+    color: #c65a3a;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+ }
+
+ .ReadMore span {
+    font-weight: bold;
+ }
+
+
+
+ .hero-section {
+   justify-items: center;
+   font-size: 25px;
+   padding: 45px;
+}
+
+.badge {
+ font-size: 20px;
+  background: #fff3e9;
+  color: #e9854b;
+}
+
+ 
+
+.hero-section h1 {
+   font-size: 40px;
+   
+}
+ .hero-section h1 span {
+   color: #f064;
+ }
+
+ .hero-section p br {
+   display: none;
+ } 

@@ -1,0 +1,309 @@
+/* ===== Nomination Form ===== */
+
+.nf-container {
+    max-width: 520px;
+    margin: 40px auto;
+    padding: 24px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    font-family: system-ui, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .nf-title {
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  .nf-review-title {
+    margin-top: 16px;
+  }
+  
+  .nf-page {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  /* Fields */
+  .nf-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 14px;
+  }
+  
+  .nf-input {
+    padding: 10px;
+    font-size: 14px;
+    font-family: inherit;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+  }
+  
+  .nf-input:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+  }
+  
+  .nf-input:disabled {
+    background: #f3f4f6;
+    cursor: not-allowed;
+  }
+  
+  .nf-textarea {
+    min-height: 140px;
+    resize: vertical;
+  }
+  
+  .nf-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .nf-counter {
+    font-size: 12px;
+    color: #6b7280;
+    align-self: flex-end;
+  }
+  
+  .nf-hint {
+    font-size: 12px;
+    color: #6b7280;
+  }
+  
+  .nf-hidden {
+    display: none;
+  }
+  
+  /* Tags */
+  .nf-tag-input {
+    flex: 1;
+  }
+  
+  .nf-tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  
+  .nf-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 10px;
+    background: #eff6ff;
+    color: #1d4ed8;
+    border-radius: 999px;
+    font-size: 13px;
+  }
+  
+  .nf-tag-remove {
+    border: none;
+    background: none;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1;
+    color: #1d4ed8;
+    cursor: pointer;
+  }
+  
+  /* Photo upload */
+  .nf-dropzone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    height: 160px;
+    border: 2px dashed #9ca3af;
+    border-radius: 10px;
+    color: #374151;
+    cursor: pointer;
+    transition: border-color 0.2s, background 0.2s;
+  }
+  
+  .nf-dropzone:hover {
+    border-color: #2563eb;
+    background: #f8fafc;
+  }
+  
+  .nf-preview-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .nf-preview {
+    max-width: 100%;
+    max-height: 220px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  /* Review  */
+  .nf-review-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .nf-review-section {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 14px;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .nf-review-section:last-child {
+    border-bottom: none;
+  }
+  
+  .nf-review-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    font-size: 14px;
+  }
+  
+  .nf-review-label {
+    font-size: 12px;
+    color: #6b7280;
+  }
+  
+  .nf-review-value {
+    white-space: pre-wrap;
+  }
+  
+  /* ----- Progress ----- */
+  .nf-progress {
+    display: flex;
+    gap: 6px;
+  }
+  
+  .nf-progress-bar {
+    flex: 1;
+    height: 4px;
+    border-radius: 2px;
+    background: #e5e7eb;
+    transition: background 0.3s;
+  }
+  
+  .nf-progress-bar.active {
+    background: #2563eb;
+  }
+  
+  /*  Error */
+  .nf-error {
+    margin: 0;
+    font-size: 14px;
+    color: #dc2626;
+  }
+  
+  /* Buttons  */
+  .nf-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+  }
+  
+  .nf-btn {
+    padding: 10px 18px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .nf-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .nf-btn-primary {
+    background: #2563eb;
+    color: white;
+    border: none;
+  }
+  
+  .nf-btn-primary:hover {
+    background: #1d4ed8;
+  }
+  
+  .nf-btn-secondary {
+    background: white;
+    border: 1px solid #d1d5db;
+  }
+  
+  .nf-btn-secondary:hover:not(:disabled) {
+    background: #f9fafb;
+  }
+  
+  .nf-link-btn {
+    border: none;
+    background: none;
+    color: #2563eb;
+    font-size: 13px;
+    cursor: pointer;
+  }
+  
+  .nf-link-btn:hover {
+    text-decoration: underline;
+  }
+  
+  /* Success message */
+  .nf-success {
+    margin: 0;
+    padding: 10px 12px;
+    background: #ecfdf5;
+    color: #047857;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  
+  /*list of heroes */
+  .heroes {
+    max-width: 520px;
+    margin: 0 auto 40px;
+    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-family: system-ui, sans-serif;
+  }
+  
+  .hero-card {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    padding: 12px;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+  }
+  
+  .hero-card p {
+    margin: 4px 0 0;
+  }
+  
+  .hero-photo {
+    width: 64px;
+    height: 64px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .heroes-title {
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  .hero-meta {
+    font-size: 12px;
+    color: #6b7280;
+  }
